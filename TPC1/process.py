@@ -27,6 +27,13 @@ def marcaLinguas(texto):
 
 texto = marcaLinguas(texto)
 
+def cleanxml(texto):
+    texto = re.sub(r'\n.*<\/text>\n',r'\n',texto)
+
+    return texto
+
+texto = cleanxml(texto)
+
 file = open('medicina2.txt', 'w')
 
 file.write(texto)
