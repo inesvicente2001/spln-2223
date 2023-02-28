@@ -1,0 +1,110 @@
+{
+    "\u00e1": {
+        "genero": "f",
+        "area": "Anatom\u00eda",
+        "trad": {
+            "es": "ala",
+            "en": "wing",
+            "pt": "asa",
+            "la": "ala"
+        }
+    },
+    "abdome": {
+        "genero": "m",
+        "area": "Anatom\u00eda",
+        "trad": {
+            "es": "abdomen",
+            "en": "abdomen",
+            "pt": "abdome",
+            "la": "abdomen"
+        }
+    },
+    "ap\u00e9ndice auricular": {
+        "genero": "m",
+        "area": "Anatom\u00eda",
+        "trad": {
+            "es": "orejuela"
+        }
+    },
+    "bolo": {
+        "genero": "m",
+        "area": "Farmacolox\u00eda",
+        "trad": {
+            "es": "bolo",
+            "en": "bole",
+            "pt": "bolo"
+        }
+    },
+    "cloro": {
+        "genero": "m",
+        "area": "Bioqu\u00edmica",
+        "trad": {
+            "es": "cloro",
+            "en": "chlorine",
+            "pt": "cloro"
+        }
+    },
+    "dispnea": {
+        "genero": "f",
+        "area": "Semiolox\u00eda",
+        "trad": {
+            "es": "disnea",
+            "en": "dyspnea"
+        }
+    },
+    "duodeno": {
+        "genero": "m",
+        "area": "Anatom\u00eda",
+        "trad": {
+            "es": "duodeno",
+            "en": "duodenum",
+            "pt": "duodeno",
+            "la": "duodenum"
+        }
+    },
+    "emoliente": {
+        "genero": "m",
+        "area": "Farmacolox\u00eda",
+        "trad": {
+            "es": "demulcente",
+            "en": "demulcent",
+            "pt": "demulcente"
+        }
+    },
+    "fagosoma": {
+        "genero": "m",
+        "area": "Histolox\u00eda",
+        "trad": {
+            "es": "fagosoma",
+            "en": "phagosome",
+            "pt": "fagossoma"
+        }
+    },
+    "fosforilaci\u00f3n": {
+        "genero": "f",
+        "area": "Bioqu\u00edmica",
+        "trad": {
+            "es": "fosforilaci\u00f3n",
+            "en": "phosphorilation",
+            "pt": "fosforila\u00e7\u00e3o"
+        }
+    },
+    "neurite": {
+        "genero": "f",
+        "area": "Patolox\u00edas",
+        "trad": {
+            "es": "neuritis",
+            "en": "neuritis",
+            "pt": "neurite"
+        }
+    },
+    "pr\u00f3tese": {
+        "genero": "f",
+        "area": "Terap\u00e9utica",
+        "trad": {
+            "es": "pr\u00f3tesis",
+            "en": "prothesis",
+            "pt": "pr\u00f3tese"
+        }
+    }
+}
