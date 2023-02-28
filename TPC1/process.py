@@ -13,8 +13,7 @@ def remove_header_footer(texto):
 texto = remove_header_footer(texto)
 
 def marcaE(texto):
-    texto = re.sub(r'(<text.* font="3"><b>((\d+)\s*(.+\S)\s+(\S))<\/b><\/text>\n)(<text.*>\s*<\/text>\n)*(<text.* font="6"><i>\s*(\S.*)<\/i><\/text>\n)', r'###C \4 ###gen \5 ###area \8\n', texto)
-    texto = re.sub(r'(<text.* font="3"><b>\s*(\S.*)<\/b><\/text>\n)(<text.*>\s*<\/text>\n)*(<text.* font="6"><i>\s*(\S.*)<\/i><\/text>\n)', r'###R \2 ###area \5\n', texto)
+    texto = re.sub(r'(<text.* font="3"><b>\s*((\d+)\s*(.+\S)\s+(\S))<\/b><\/text>\n)(<text.*>\s*<\/text>\n)*(<text.* font="6"><i>\s*(\S.*)<\/i><\/text>\n)', r'###C \4 ###gen \5 ###area \8\n', texto)
   
     return texto
 
@@ -28,7 +27,7 @@ def marcaLinguas(texto):
 texto = marcaLinguas(texto)
 
 def cleanxml(texto):
-    texto = re.sub(r'\n.*<\/text>\n',r'\n',texto)
+    texto = re.sub(r'.+<\/text>\n',r'',texto)
 
     return texto
 
@@ -40,7 +39,7 @@ file.write(texto)
 
 dict_p = {}
 
-patern = re.compile(r"###C\s+(.*)\s###gen\s(\S)\s###area\s(\S+)\n(<.*\n)*(###L\s(\S+)\s###pal\s(\S+)\n(<.*\n)*){1,4}")
+patern = re.compile(r"###C\s+(.*)\s###gen\s(\S)\s###area\s(\S+)\n(###L\s(\S+)\s###pal\s(\S+)\n){1,4}")
 patern2 = re.compile(r'###L\s(\S+)\s###pal\s(\S+)\n')
 
 for match in patern.finditer(texto):
