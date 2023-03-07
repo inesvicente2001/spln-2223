@@ -1,0 +1,17 @@
+dic: LPAL
+
+LPAL: PAL '\n' '\n' LPAL
+    | PAL
+
+PAL: LTEMA '\n' LTRAD
+
+LTEMA: TEMA ';' ' ' LTEMA
+     | TEMA
+
+LTRAD: TRAD '\n' LTRAD
+     | TRAD
+
+TRAD: LIN ' ' '-' ' ' LPALTRAD
+
+LPALTRAD: PALTRAD ';' ' ' LPALTRAD
+        | LPALTRAD

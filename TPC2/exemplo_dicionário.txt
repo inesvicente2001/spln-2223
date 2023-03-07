@@ -1,0 +1,23 @@
+Patoloxías
+ga - acalasia
+es - acalasia
+en - achalasia
+pt - acalasia; acalásia
+
+Semioloxía
+ga - hipotermia
+es - hipotermia
+en - hypothermia
+pt - hipotermia
+
+Patoloxías
+ga - onicopatía
+es - onicopatía
+en - onychopathy
+pt - onicopatia
+
+Terapéutica; Probas complementarias
+ga - otoscopia
+es - otoscopia
+en - otoscopy
+pt - otoscopia

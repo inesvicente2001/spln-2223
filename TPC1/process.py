@@ -1,7 +1,7 @@
 import re
 import json
 
-texto = open('medicina.xml', 'r').read()
+texto = open('medicina.xml', 'r', encoding="utf8").read()
 
 def remove_header_footer(texto):
     texto = re.sub(r'<text.* font="1">ocabulario.*<\/text>', r'###', texto)
@@ -33,7 +33,7 @@ def cleanxml(texto):
 
 texto = cleanxml(texto)
 
-file = open('medicina2.txt', 'w')
+file = open('medicina2.txt', 'w', encoding="utf8")
 
 file.write(texto)
 
@@ -54,6 +54,6 @@ for match in patern.finditer(texto):
 
 json_object = json.dumps(dict_p, indent = 4)
 
-jsonfile = open('medicina2.json', 'w')
+jsonfile = open('medicina2.json', 'w', encoding="utf8")
 
 jsonfile.write(json_object)
