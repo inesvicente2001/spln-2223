@@ -1,4 +1,5 @@
 import ply.yacc as yacc
+from lex import tokens, literals
 
 def p_1(p): "dic: LPAL" ; pass
 
@@ -21,3 +22,11 @@ def p_9(p): "TRAD: LIN ' ' '-' ' ' PALTRAD" ; pass
 def p_10(p): "LPALTRAD: PALTRAD ';' ' ' LPALTRAD" ; pass
 
 def p_11(p): "LPALTRAD: PALTRAD" ; pass
+
+parser = yacc.yacc()
+
+with open('exemplo_dicionario.txt','r') as f:
+    content = f.read()
+    parser.success = True
+    parser.flag = True
+    parser.parse(content)
